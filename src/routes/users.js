@@ -8,7 +8,15 @@ router.get('/users', async (req, res) => {
   res.send(users);
 });
 
-router.get('/users/:id', async (req, res) => {});
+router.get('/users/:id', async (req, res) => {
+  const { id } = req.params;
+
+  const user = await UserRepo.findById(id);
+  if (!user) {
+    return res.sendStatus(404);
+  }
+  res.send(user);
+});
 
 router.post('/users', async (req, res) => {});
 
