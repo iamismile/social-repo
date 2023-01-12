@@ -3,8 +3,10 @@ GET http://localhost:3005/users
 ###
 
 # ---- SQL Injection Exploit ----
-# We never, Ever directly concatenate user-provided input
+# ⚠️ We never, Ever directly concatenate user-provided input
 # into SQL query
+# 💡 Add code to 'sanitize' user provided values to our app
+# 💡 Or rely on Postgres to sanitize values for us
 # GET http://localhost:3005/users/1;DROP TABLE users;
 
 
