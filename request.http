@@ -11,3 +11,13 @@ GET http://localhost:3005/users
 
 
 GET http://localhost:3005/users/1
+
+###
+
+POST http://localhost:3005/users
+Content-Type: application/json
+
+{
+  "username": "minty3",
+  "bio": "I am a mint"
+}
