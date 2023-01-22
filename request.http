@@ -1,7 +1,6 @@
 GET http://localhost:3005/users
 
 ###
-
 # ---- SQL Injection Exploit ----
 # ⚠️ We never, Ever directly concatenate user-provided input
 # into SQL query
@@ -13,7 +12,6 @@ GET http://localhost:3005/users
 GET http://localhost:3005/users/1
 
 ###
-
 POST http://localhost:3005/users
 Content-Type: application/json
 
@@ -23,7 +21,6 @@ Content-Type: application/json
 }
 
 ###
-
 PUT http://localhost:3005/users/1
 Content-Type: application/json
 
@@ -31,3 +28,6 @@ Content-Type: application/json
   "username": "Alyson156",
   "bio": "I am a alyson"
 }
+
+###
+DELETE  http://localhost:3005/users/1
