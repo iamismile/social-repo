@@ -7,7 +7,7 @@ beforeAll(() => {
   return pool.connect({
     host: 'localhost',
     port: 5432,
-    database: 'socialnetwork',
+    database: 'socialnetwork-test',
     user: 'iamismile',
     password: 'iamismile',
   });
